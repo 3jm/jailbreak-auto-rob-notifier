@@ -19,3 +19,5 @@
 [Download](https://pastebin.com/raw/SL2dArPf) | [Make pull request](https://github.com/3jm/jailbreak-auto-rob-notifier/compare) | [Report Issue](https://github.com/3jm/jailbreak-auto-rob-notifier/issues/new)
 
 </div>
+
+<hr />
