@@ -73,7 +73,7 @@ MainNotifierBtn.Text = ""
 MainNotifierBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
 MainNotifierBtn.TextSize = 14.000
 local mainnotiferbool = false
-_G.waittimer = 10
+_G.waittimer = 900 -- 15 minutes
 MainNotifierBtn.MouseButton1Click:Connect(function()
 	if mainnotiferbool == false then
 		mainnotiferbool = true
