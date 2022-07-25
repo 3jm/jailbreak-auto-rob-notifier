@@ -39,6 +39,13 @@
 <div align="center">
 <h1>Known Issues</h1>
 </div>
+
+| Issue Severity Table |
+| ------------|
+| 🟡 - Not imediate, mild issue |
+| 🟠 - Needs to be patched soon, semi major issue |
+| 🔴 - Will be patched soon as identified |
+
 <p align="left">
 🟠 Crashing after ~1 hour of using the script
 </p>
