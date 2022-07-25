@@ -12,6 +12,8 @@ local MainNotifierBtn = Instance.new("TextButton")
 local MainNotifierText = Instance.new("TextLabel")
 local webhook = Instance.new("TextBox")
 local TextButton = Instance.new("TextButton")
+local webhookTimer = Instance.new("TextBox")
+local TimerText = Instance.new("TextLabel")
 local CreditsButton = Instance.new("TextButton")
 local HomeButton = Instance.new("TextButton")
 local CreditsTab = Instance.new("Frame")
@@ -73,7 +75,7 @@ MainNotifierBtn.Text = ""
 MainNotifierBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
 MainNotifierBtn.TextSize = 14.000
 local mainnotiferbool = false
-_G.waittimer = 900 -- 15 minutes
+_G.waittimer = webhookTimer.Text
 MainNotifierBtn.MouseButton1Click:Connect(function()
 	if mainnotiferbool == false then
 		mainnotiferbool = true
@@ -180,6 +182,30 @@ TextButton.MouseButton1Click:Connect(function()
 	wait(3)
 	TextButton.Text = "Test"
 end)
+
+webhookTimer.Name = "webhookTimer"
+webhookTimer.Parent = HomeTab
+webhookTimer.BackgroundColor3 = Color3.fromRGB(112, 112, 112)
+webhookTimer.Position = UDim2.new(0.0259999447, 0, 0.28717953, 0)
+webhookTimer.Size = UDim2.new(0, 57, 0, 21)
+webhookTimer.Font = Enum.Font.GothamMedium
+webhookTimer.PlaceholderColor3 = Color3.fromRGB(213, 213, 213)
+webhookTimer.PlaceholderText = "900"
+webhookTimer.Text = ""
+webhookTimer.TextColor3 = Color3.fromRGB(255, 255, 255)
+webhookTimer.TextSize = 12.000
+
+TimerText.Name = "TimerText"
+TimerText.Parent = HomeTab
+TimerText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TimerText.BackgroundTransparency = 1.000
+TimerText.Position = UDim2.new(0.277879655, 0, 0.28717953, 0)
+TimerText.Size = UDim2.new(0, 129, 0, 21)
+TimerText.Font = Enum.Font.GothamMedium
+TimerText.Text = "Webhook Timer (Seconds)"
+TimerText.TextColor3 = Color3.fromRGB(255, 255, 255)
+TimerText.TextSize = 14.000
+TimerText.TextXAlignment = Enum.TextXAlignment.Left
 
 CreditsButton.Name = "CreditsButton"
 CreditsButton.Parent = main
