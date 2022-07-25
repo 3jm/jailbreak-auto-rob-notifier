@@ -32,3 +32,13 @@
     src="https://cdn.discordapp.com/attachments/995764976369279127/1000957323054944326/unknown.png?size=4096"
   />
 </a>
+
+<br />
+<hr />
+
+<div align="center">
+<h1>Known Issues</h1>
+</div>
+<p align="left">
+🟠 Crashing after ~1 hour of using the script
+</p>
