@@ -74,16 +74,17 @@ MainNotifierBtn.Font = Enum.Font.SourceSans
 MainNotifierBtn.Text = ""
 MainNotifierBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
 MainNotifierBtn.TextSize = 14.000
+_G.sendhook = false
 local mainnotiferbool = false
-_G.waittimer = webhookTimer.Text
 MainNotifierBtn.MouseButton1Click:Connect(function()
 	if mainnotiferbool == false then
 		mainnotiferbool = true
+		_G.sendhook = true
 		MainNotifierBtn.BackgroundColor3 = Color3.fromRGB(85, 170, 255)
 		local webhookUrl
 		webhookUrl = webhook.Text
 		local request = http_request or request or HttpPost or (syn and syn.request) or (http and http.request)
-		while mainnotiferbool do
+		while _G.sendhook do
 			print("Attempting to send webhook.")
 			request({
 				Url = webhookUrl,
@@ -123,11 +124,16 @@ MainNotifierBtn.MouseButton1Click:Connect(function()
 					["content-type"] = "application/json"
 				}
 			})
-			task.wait(_G.waittimer)
+			require(game:GetService("ReplicatedStorage").Game.Notification).new({
+				Text = "Sent Webhook, check your discord!\nBlind#2665, fayy#9999 & HKPlays#4587",
+				Duration = 10
+			})
+			task.wait(webhookTimer.Text)
 		end
 	else
 		MainNotifierBtn.BackgroundColor3 = Color3.fromRGB(130, 130, 130)
 		mainnotiferbool = false
+		_G.sendhook = false
 	end
 end)
 
