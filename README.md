@@ -21,3 +21,14 @@
 </div>
 
 <hr />
+
+<div align="center">
+<h1>Media</h1>
+</div>
+
+<a href="https://cdn.discordapp.com/attachments/995764976369279127/1000957323054944326/unknown.png?size=4096">
+  <img
+    alt="Media 1"
+    src="https://cdn.discordapp.com/attachments/995764976369279127/1000957323054944326/unknown.png?size=4096"
+  />
+</a>
