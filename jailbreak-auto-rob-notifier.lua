@@ -305,25 +305,6 @@ if game.PlaceId == 606849621 then -- Game execution check
     TextLabel_4.Text = "Base Dev : fayy#9999"
     TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
     TextLabel_4.TextSize = 14.000
-
-    local isOpen = true
-
-    local UIS = game:GetService("UserInputService")
-    UIS.InputBegan:Connect(
-        function(key)
-            if key.KeyCode == Enum.KeyCode.Equals then
-                if isOpen == true then
-                    isOpen = false
-                    main.Visible = false
-                    print("Menu state : HIDDEN")
-                else
-                    isOpen = true
-                    main.Visible = true
-                    print("Menu state : VISIBLE")
-                end
-            end
-        end
-    )
 else
     game.Players.LocalPlayer:Kick("Game check failed! Please execute on JAILBREAK! (606849621)")
 end
