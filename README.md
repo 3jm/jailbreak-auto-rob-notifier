@@ -54,5 +54,5 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/3jm/jailbreak-auto-ro
 | 🔴 - Will be patched soon as identified |
 
 <p align="left">
-  🔴 - Will not update information
+  - None
 </p>
