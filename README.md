@@ -20,7 +20,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/3jm/jailbreak-auto-ro
 ```
 
 
-[Discord](https://discord.gg/XUXSendq74)
+[**Discord**](https://discord.gg/XUXSendq74)
 <br />
 
 [Make pull request](https://github.com/3jm/jailbreak-auto-rob-notifier/compare) | [Report Issue](https://github.com/3jm/jailbreak-auto-rob-notifier/issues/new)
