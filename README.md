@@ -15,7 +15,6 @@
 <p>Advanced Jailbreak Auto-Rob Notifier made for alerting you of your current account's stats while away</p>
 
 [Discord](https://discord.gg/XUXSendq74)
-
 <br />
 
 [Download](https://pastebin.com/raw/SL2dArPf) | [Make pull request](https://github.com/3jm/jailbreak-auto-rob-notifier/compare) | [Report Issue](https://github.com/3jm/jailbreak-auto-rob-notifier/issues/new)
